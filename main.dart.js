@@ -89595,12 +89595,15 @@ q=r instanceof A.cw
 p=A.aVx(n,n,q?B.a5u:A.a7(a).fy,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
 if(r instanceof A.fM)r=B.f_
 else r=q?B.uk:B.aep
-return A.b_(n,A.bX(A.b([l,new A.KJ(1,10,o.r,o.f,1,!0,!0,new A.ajg(o),B.Mc,n),B.eB,A.d0(A.b([A.aVw(!1,r,B.i,n,n,n,n,n,new A.ajh(o),p)],s),B.u,n,B.du,B.q)],s),B.u,n,B.E,B.q),B.i,n,n,new A.bO(B.ik,n,n,m,n,n,B.R),n,n,n,B.Qm,B.Y,n,n,n)},
-HO(){var s=this.c,r=s==null,q=r?null:s.c
-if(q==null)q=0
-s=r?null:s.d
-if(s==null)s=0
-return 1000*(this.r*10/10-q)/s+5000}}
+return A.b_(n,A.bX(A.b([l,new A.KJ(0,10,o.r,o.f,1,!0,!0,new A.ajg(o),B.Mc,n),B.eB,A.d0(A.b([A.aVw(!1,r,B.i,n,n,n,n,n,new A.ajh(o),p)],s),B.u,n,B.du,B.q)],s),B.u,n,B.E,B.q),B.i,n,n,new A.bO(B.ik,n,n,m,n,n,B.R),n,n,n,B.Qm,B.Y,n,n,n)},
+HO(){var s,r=this.c,q=r==null
+if(q)s=null
+else{s=r.c
+if(s==null)s=null}if(s==null)s=0
+if(q)r=null
+else{r=r.d
+if(r==null)r=0}if(r==null)r=0
+return 1000*(this.r-s)/r+5000}}
 A.ajg.prototype={
 $2(a,b){return B.e.k(B.d.R(this.a.HO()))},
 $S:204}
@@ -92882,21 +92885,26 @@ r.fx=a
 r.k8(A.kP(new A.c3(Date.now(),!1)))},
 $S:10}
 A.aft.prototype={
-$1(a){var s,r,q,p=null
-a.f!=null
-s=this.a
-r=a.a
-r=r==null?p:B.d.R(r)
-if(r==null)r=0
-s.CW.h(0,r,$.dh())
-r=a.a
-r=r==null?p:B.d.R(r)
-if(r==null)r=0
-q=a.f
-if(q==null)q=p
-else{q=q.f
-if(q==null)q=p}if(q==null)q=50
-s.cx.h(0,r,q/10)},
+$1(a){var s,r,q,p,o=null,n=this.a,m=a.a
+m=m==null?o:B.d.R(m)
+if(m==null)m=0
+n.CW.h(0,m,$.dh())
+m=a.f
+s=m==null
+if(s)r=o
+else{m=m.r
+if(m==null)m=o
+r=m}if(r==null)r=0
+m=a.d
+if(m==null)m=0
+q=a.c
+if(q==null)q=0
+p=(r-5000)*m/1000+q
+m=a.a
+m=m==null?o:B.d.R(m)
+if(m==null)m=0
+s=!s?p:5
+n.cx.h(0,m,s)},
 $S:612}
 A.afv.prototype={
 $1(a){return J.d(a.geR(a),this.a)},

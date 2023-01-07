@@ -12,6 +12,11 @@ firebase.initializeApp({
 });
 
 const messaging = firebase.messaging();
+messaging.usePublicVapidKey('BAhwfpbIY-O74ANDlCERfNWz_pYCckLOhi-TMBQmWk5XOAHcSgFyQGiVVJD2ft28AIGJnPmw25LSG2_KgXg3FyU');
+
+messaging.getToken().then((currentToken) => {
+    console.log(currentToken)
+})
 messaging.onBackgroundMessage((message) => {
   console.log("onBackgroundMessage", message);
 });

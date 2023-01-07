@@ -33,12 +33,17 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1541549408';
+    var serviceWorkerVersion = '3525039736';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-messaging.js"></script>
 </head>
 <body>
+    <script src="/kanoon/firebase-messaging-sw.js"></script>
+    <script src="main.dart.js" type="application/javascript"></script>
   <script>
     window.addEventListener('load', function(ev) {
     navigator.serviceWorker.register('/kanoon/firebase-messaging-sw.js');

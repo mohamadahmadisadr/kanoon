@@ -4,6 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"firebase-messaging-sw.js": "52303de3fe2f419893caa4784423deb3",
 "assets/shaders/ink_sparkle.frag": "3bc0cae167e88f61480f915c552ffa36",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/fonts/dana_m.ttf": "7053ef9b87586e56bb37ca6c11eae47f",
@@ -22,8 +23,8 @@ const RESOURCES = {
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
 "canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
-"index.html": "8f6bbee671e5256324a659fcfbefa97b",
-"/": "8f6bbee671e5256324a659fcfbefa97b",
+"index.html": "f27376de231f8f7c8b13327e5b07ab3f",
+"/": "f27376de231f8f7c8b13327e5b07ab3f",
 "main.dart.js": "3583e40ecd80461c64ce318154516740",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",

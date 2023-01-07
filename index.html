@@ -33,7 +33,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2679512725';
+    var serviceWorkerVersion = '1541549408';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -42,10 +42,7 @@
   <script>
     window.addEventListener('load', function(ev) {
     navigator.serviceWorker.register('/kanoon/firebase-messaging-sw.js');
-    var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-    messaging.onBackgroundMessage((message) => {
-          console.log("onBackgroundMessage", message);
-    });
+     var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
